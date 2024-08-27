@@ -1,0 +1,38 @@
+h4{
+    color: rgba(66, 227, 233, 0.849);
+    text-align: center;
+    font-size: large;   
+    font-family: monospace;
+}
+
+body{
+    background-color: black;
+}
+
+p{
+    color: green;
+    font-family: monospace;
+    font-size: large;
+}
+h3{
+    color: magenta;
+    font-family: monospace;
+    text-align: center;
+    font-size: xx-large;
+}
+h5{
+    color:magenta;
+    font-family: monospace;
+    font-size: larger;
+}
+a{
+    color:blueviolet;
+    font-family: monospace;
+}
+strong{
+    color:crimson;
+}
+
+em{
+    color: rgb(218, 155, 72);
+}
