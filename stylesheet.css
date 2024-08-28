@@ -6,6 +6,10 @@
     font-family: 'Alien';
     src: url(font/Alien.ttf);
 }
+@font-face {
+    font-family: 'Orbitron';
+    src: url(font/Orbitron-VariableFont_wght.ttf);
+}
 
 
 
@@ -13,7 +17,7 @@
 h4{
     text-align: center;
     font-size: large;   
-    font-family: 'TrenchThin',monospace;
+    font-family: 'TrenchThin','Orbitron';
     color: rgba(0, 243, 252, 0.788);
 }
 
@@ -25,23 +29,23 @@ body{
 
 p{
     color: green;
-    font-family: 'TrenchThin',monospace;
+    font-family: 'TrenchThin','Orbitron';
     font-size: large;
 }
 h3{
     color: magenta;
-    font-family: 'TrenchThin',monospace;
+    font-family: 'TrenchThin','Orbitron';
     text-align: center;
     font-size: xx-large;
 }
 h5{
     color:magenta;
-    font-family: 'TrenchThin',monospace;
+    font-family: 'TrenchThin','Orbitron';
     font-size: larger;
 }
 a{
     color:blueviolet;
-    font-family: 'TrenchThin',monospace;
+    font-family: 'TrenchThin','Orbitron';
 }
 strong{
     color:crimson;
