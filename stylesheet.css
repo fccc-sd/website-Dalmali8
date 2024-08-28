@@ -61,4 +61,14 @@ em{
 
     color: darkturquoise;
 }
+
+#title{
+    font-weight: normal;
+
+}
+
+#image{
+    text-align: center;
+}
+
 /*get error fixed*/
