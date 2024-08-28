@@ -13,7 +13,7 @@
 h4{
     text-align: center;
     font-size: large;   
-    font-family: 'TrenchThin';
+    font-family: 'TrenchThin',monospace;
     color: rgba(0, 243, 252, 0.788);
 }
 
@@ -25,23 +25,23 @@ body{
 
 p{
     color: green;
-    font-family: 'TrenchThin';
+    font-family: 'TrenchThin',monospace;
     font-size: large;
 }
 h3{
     color: magenta;
-    font-family: 'TrenchThin';
+    font-family: 'TrenchThin',monospace;
     text-align: center;
     font-size: xx-large;
 }
 h5{
     color:magenta;
-    font-family: 'TrenchThin';
+    font-family: 'TrenchThin',monospace;
     font-size: larger;
 }
 a{
     color:blueviolet;
-    font-family: 'TrenchThin';
+    font-family: 'TrenchThin',monospace;
 }
 strong{
     color:crimson;
