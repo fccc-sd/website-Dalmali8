@@ -44,8 +44,10 @@ h5{
     font-size: larger;
 }
 a{
-    color:blueviolet;
+    color:rgb(255, 255, 255);
     font-family: 'TrenchThin','Orbitron';
+    line-height: 2em;
+    
 }
 strong{
     color:crimson;
