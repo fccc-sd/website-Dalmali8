@@ -1,38 +1,52 @@
+@font-face {
+    font-family: 'TrenchThin';
+    src: url(font/TrenchThin-aZ1J.ttf);
+}
+@font-face {
+    font-family: 'Alien';
+    src: url(font/Alien.ttf);
+}
+
+
+
+
 h4{
-    color: rgba(66, 227, 233, 0.849);
     text-align: center;
     font-size: large;   
-    font-family: monospace;
+    font-family: 'TrenchThin';
+    color: rgba(0, 243, 252, 0.788);
 }
 
 body{
-    background-color: black;
+    background-color: black
+    ;
+    
 }
 
 p{
     color: green;
-    font-family: monospace;
+    font-family: 'TrenchThin';
     font-size: large;
 }
 h3{
     color: magenta;
-    font-family: monospace;
+    font-family: 'TrenchThin';
     text-align: center;
     font-size: xx-large;
 }
 h5{
     color:magenta;
-    font-family: monospace;
+    font-family: 'TrenchThin';
     font-size: larger;
 }
 a{
     color:blueviolet;
-    font-family: monospace;
+    font-family: 'TrenchThin';
 }
 strong{
     color:crimson;
 }
 
 em{
-    color: rgb(218, 155, 72);
+  color: cadetblue;  
 }
