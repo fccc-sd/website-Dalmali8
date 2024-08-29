@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Azonix';
+    src: url(font/Azonix-1VB0.otf);
+}
+
+
+
+body{
+    background-image: url(images/image_fx2.jpg);
+    background-color: black;
+}
+
+h1{
+    color: rgb(144, 51, 207);
+    font-family: 'Azonix';
+    text-align: center;
+}
+
+a{
+    color: antiquewhite;
+    text-align: left;
+    font-size: large;
+}
+
+p{
+    color: blueviolet;
+    text-emphasis-color: white;
+
+}
