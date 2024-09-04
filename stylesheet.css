@@ -28,7 +28,7 @@ body{
 }
 
 p{
-    color: green;
+    color: rgb(255, 255, 255);
     font-family: 'TrenchThin','Orbitron';
     font-size: large;
 }
@@ -44,7 +44,7 @@ h5{
     font-size: larger;
 }
 a{
-    color:rgb(255, 255, 255);
+    color:rgb(5, 249, 13);
     font-family: 'TrenchThin','Orbitron';
     line-height: 2em;
     
@@ -71,4 +71,18 @@ em{
     text-align: center;
 }
 
+nav{
+   background-color: rgb(64, 64, 64);
+    color: rgb(0, 0, 0);
+    font-family: 'TrenchThin','Orbitron';
+    font-size: xx-large;
+    line-height: 200% ;
+}
+
+nav li {
+    display: inline;
+    padding-right: 40px;
+
+
+}
 /*get error fixed*/
