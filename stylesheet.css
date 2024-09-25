@@ -10,7 +10,10 @@
     font-family: 'Orbitron';
     src: url(font/Orbitron-VariableFont_wght.ttf);
 }
-
+@font-face {
+    font-family: 'Glitched';
+    src: url(font/SdglitchdemoRegular-YzROj.ttf);
+}
 
 
 
@@ -47,7 +50,15 @@ a{
     color:rgb(5, 249, 13);
     font-family: 'TrenchThin','Orbitron';
     line-height: 2em;
+
     
+}
+a:hover {
+    background-color: red;
+    color: rgb(0, 0, 0);
+    font-family: 'Glitched','Orbitron';
+
+
 }
 strong{
     color:crimson;
@@ -77,12 +88,14 @@ nav{
     font-family: 'TrenchThin','Orbitron';
     font-size: xx-large;
     line-height: 200% ;
+    border: solid 2px whitesmoke;
 }
 
 nav li {
     display: inline;
     padding-right: 40px;
-
+    border: solid 2p whitesmoke;
 
 }
+
 /*get error fixed*/
