@@ -27,7 +27,16 @@ h4{
 body{
     background-color: black
     ;
+    text-align: center;
     
+}
+
+iframe
+{
+    width: 850px;
+    height: 650px;
+    border: 0px;
+
 }
 
 p{
