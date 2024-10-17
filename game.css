@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'TrenchThin';
+    src: url(font/TrenchThin-aZ1J.ttf);
+}
+@font-face {
+    font-family: 'Alien';
+    src: url(font/Alien.ttf);
+}
+@font-face {
+    font-family: 'Orbitron';
+    src: url(font/Orbitron-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'Glitched';
+    src: url(font/SdglitchdemoRegular-YzROj.ttf);
+}
+
+
+
+h4{
+    text-align: center;
+    font-size: large;   
+    font-family: 'TrenchThin','Orbitron';
+    color: rgba(0, 243, 252, 0.788);
+}
+
+body{
+    background-color: black
+    ;
+    text-align: center;
+    
+}
+
+iframe
+{
+    width: 850px;
+    height: 650px;
+    border: 0px;
+
+}
+
+p{
+    color: rgb(255, 255, 255);
+    font-family: 'TrenchThin','Orbitron';
+    font-size: large;
+}
+h3{
+    color: magenta;
+    font-family: 'TrenchThin','Orbitron';
+    text-align: center;
+    font-size: xx-large;
+}
+h5{
+    color:magenta;
+    font-family: 'TrenchThin','Orbitron';
+    font-size: larger;
+}
+a{
+    color:rgb(5, 249, 13);
+    font-family: 'TrenchThin','Orbitron';
+    line-height: 2em;
+
+    
+}
+a:hover {
+    background-color: red;
+    color: rgb(0, 0, 0);
+    font-family: 'Glitched','Orbitron';
+
+
+}
+strong{
+    color:crimson;
+}
+
+em{
+  color: cadetblue;  
+}
+
+#footer{
+
+    color: darkturquoise;
+}
+
+#title{
+    font-weight: normal;
+
+}
+
+#image{
+    text-align: center;
+}
+
+nav{
+   background-color: rgb(64, 64, 64);
+    color: rgb(0, 0, 0);
+    font-family: 'TrenchThin','Orbitron';
+    font-size: xx-large;
+    line-height: 200% ;
+    border: solid 2px whitesmoke;
+}
+
+nav li {
+    display: inline;
+    padding-right: 40px;
+    border: solid 2p whitesmoke;
+
+}
+
+/*get error fixed*/
