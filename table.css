@@ -10,10 +10,7 @@
     font-family: 'Orbitron';
     src: url(font/Orbitron-VariableFont_wght.ttf);
 }
-@font-face {
-    font-family: 'Glitched';
-    src: url(font/SdglitchdemoRegular-YzROj.ttf);
-}
+
 
 
 
@@ -50,15 +47,7 @@ a{
     color:rgb(5, 249, 13);
     font-family: 'TrenchThin','Orbitron';
     line-height: 2em;
-
     
-}
-a:hover {
-    background-color: red;
-    color: rgb(0, 0, 0);
-    font-family: 'Glitched','Orbitron';
-
-
 }
 strong{
     color:crimson;
@@ -80,7 +69,6 @@ em{
 
 #image{
     text-align: center;
-    float:none;
 }
 
 nav{
@@ -89,30 +77,28 @@ nav{
     font-family: 'TrenchThin','Orbitron';
     font-size: xx-large;
     line-height: 200% ;
-    border: solid 2px whitesmoke;
 }
 
 nav li {
     display: inline;
     padding-right: 40px;
-    border: solid 2p whitesmoke;
+
 
 }
 
-input {
-    background-color: black;
-    border-color: aliceblue;
-    color: rgb(255, 255, 255);
+td, tr, th, table {
+    color: aliceblue;
     font-family: 'TrenchThin','Orbitron';
-    font-size: large;
-    text-align: center;
+    font-size: xx-large;
+   border: solid 2px white;
+   text-align: center;
 }
-input:hover {
-    background-color: rgb(255, 255, 255);
-    color: black;
-    text-align: center;
-
+td:hover, tr:hover, th:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgba(17, 202, 17, 0.482);
+    font-family: 'TrenchThin','Orbitron';
+    font-size: xx-large;
+   border: solid 2px rgb(0, 0, 0);
+   text-align: center;
 }
-
-
 /*get error fixed*/
