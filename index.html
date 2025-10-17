@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="Main.css">
+</head>
+
+<body>
+    <header>
+    <h1>About Me</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="Quotes.html">Quotes</a></li>
+            <li><a href="#about">Who Am I?</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#goals">Goals</a></li>
+            <li><a href="#funfacts">Fun Facts</a></li>
+            <li><a href="#accordion-section">More</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+    <main>
+        <section id="about">
+            <h2>Who Am I?</h2>
+            <p>I am a student at Four County Career Center in Archbold, Ohio.</p>
+        </section>
+
+        <section id="hobbies">
+            <h2>Hobbies</h2>
+            <ul>
+               <li>Working</li> 
+               <li>Hanging out with friends</li>
+               <li>Sleeping</li> 
+               <li>Learning about space</li> 
+               <li>Playing video games</li> 
+               <li>Watching movies</li> 
+               <li>Listening to music</li> 
+               <li>Reading books about space</li>
+            </ul>
+        </section>
+
+        <section id="goals">
+            <h2>After High School</h2>
+            <p>I plan to go to college and major in Astrophysics with a minor in Cosmology. My goal is to earn a PhD in Astrophysics.</p>
+            <br>
+            <p>I want to understand and learn Quantum Mechanics and Quantum Physics while advancing my math skills — taking Calculus and other advanced math classes.</p>
+        </section>
+
+        <section id="funfacts">
+            <h2>Fun Facts</h2>
+            <ul>
+                <li>I love looking at space photos from NASA.</li>
+                <li>I can sleep through almost anything, Unless its my door opening.</li>
+                <li>I enjoy learning about black holes and the universe.</li>
+            </ul>
+        </section>
+
+        <section id="accordion-section">
+            <h2>More About Me</h2>
+            <div class="accordion">
+                <h3>Favorite Things</h3>
+                <div>
+                    <p>Space, science.</p>
+                </div>
+                <h3>Dream Job</h3>
+                <div>
+                    <p>Working as an astrophysicist, Cosmologist and studying space and black holes.</p>
+                </div>
+                <h3>Fun Memory</h3>
+                <div>
+                    <p>Mr.Styers Class</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <h2>Space Gallery</h2>
+            <div class="lightbox-gallery">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Black_hole_-_Messier_87_crop_max_res.jpg" alt="Black Hole" class="lightbox">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/NGC_1232.jpg/330px-NGC_1232.jpg" alt="Galaxy" class="lightbox">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/PacMan_Nebula%2C_NGC_281.jpg/330px-PacMan_Nebula%2C_NGC_281.jpg" alt="Nebula" class="lightbox">
+            </div>
+        </section>
+
+        <div id="lightbox-overlay">
+            <span id="close-lightbox">&times;</span>
+            <img id="lightbox-img" src="" alt="">
+        </div>
+    </main>
+
+    <footer>
+        <p>“The universe is under no obligation to make sense to you.” — Neil deGrasse Tyson</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".accordion h3").click(function(){
+                $(this).next("div").slideToggle(300);
+                $(".accordion div").not($(this).next()).slideUp(300);
+            });
+            $(".lightbox").click(function(){
+                $("#lightbox-img").attr("src", $(this).attr("src"));
+                $("#lightbox-overlay").fadeIn();
+            });
+            $("#close-lightbox, #lightbox-overlay").click(function(e){
+                if(e.target !== this) return;
+                $("#lightbox-overlay").fadeOut();
+            });
+        });
+    </script>
+    
+</body>
+</html>
