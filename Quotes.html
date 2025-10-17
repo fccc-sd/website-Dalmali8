@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Quotes</title>
+    <link rel="stylesheet" href="Main.css">
+</head>
+<body>
+    <header>
+        <h1>Space Quotes</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">About Me</a></li>
+                <li><a href="Quotes.html">Quotes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="quote-section">
+            <div id="quote-box">
+                <p id="quote"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>“Explore the universe, and it will explore you.”</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            const quotes = [
+                "Somewhere, something incredible is waiting to be known. — Carl Sagan",
+                "The nitrogen in our DNA, the calcium in our teeth, the iron in our blood, the carbon in our apple pies were made in the interiors of collapsing stars. We are made of starstuff. — Carl Sagan",
+                "Exploration is in our nature. We began as wanderers, and we are wanderers still. — Carl Sagan",
+                "The cosmos is within us. We are made of star-stuff. We are a way for the universe to know itself. — Carl Sagan",
+                "We are just an advanced breed of monkeys on a minor planet of a very average star. But we can understand the universe. That makes us something very special. — Stephen Hawking",
+                "Equipped with his five senses, man explores the universe around him and calls the adventure Science. — Edwin Hubble",
+                "Time and space are modes by which we think, not conditions in which we live. — Albert Einstein",
+                "Look up at the stars and not down at your feet. Try to make sense of what you see and wonder about what makes the universe exist. Be curious. — Stephen Hawking",
+                "Not only is the universe stranger than we imagine, it is stranger than we can imagine. — Sir Arthur Eddington",
+                "For small creatures such as we, the vastness is bearable only through love. — Carl Sagan",
+                "The universe is under no obligation to make sense to you. — Neil deGrasse Tyson",
+                "The most beautiful thing we can experience is the mysterious. It is the source of all true art and science. — Albert Einstein",
+                "To confine our attention to terrestrial matters would be to limit the human spirit. — Stephen Hawking",
+                "Space is the breath of art. — Frank Lloyd Wright",
+                "Across the sea of space, the stars are other suns. — Carl Sagan",
+                "We are a way for the cosmos to know itself. — Carl Sagan",
+                "The universe doesn’t allow perfection. — Stephen Hawking",
+                "Man is the universe made conscious and life is the means by which the universe understands itself. — Brian Cox",
+                "Science is not only compatible with spirituality; it is a profound source of spirituality. — Carl Sagan",
+                "When we contemplate the cosmos, we realize how small we are, yet how privileged to witness it. — Neil deGrasse Tyson",
+                "The cosmos is all that is or ever was or ever will be. — Carl Sagan",
+                "Somewhere, beyond the stars, there is a universe we have yet to understand. — Neil deGrasse Tyson",
+                "Mystery creates wonder and wonder is the basis of our desire to understand. — Neil deGrasse Tyson",
+                "Time is an illusion. — Albert Einstein",
+                "The distinction between past, present, and future is only a stubbornly persistent illusion. — Albert Einstein",
+                "Space and time are the framework for understanding the universe, but they are not absolute. — Stephen Hawking"
+            ];
+
+            let usedIndices = [];
+
+            function getRandomQuote() {
+                if (usedIndices.length === quotes.length) {
+                    usedIndices = [];
+                }
+
+                let index;
+                do {
+                    index = Math.floor(Math.random() * quotes.length);
+                } while (usedIndices.includes(index));
+
+                usedIndices.push(index);
+                return quotes[index];
+            }
+
+            $("#quote").text(getRandomQuote());
+        });
+    </script>
+</body>
+</html>
